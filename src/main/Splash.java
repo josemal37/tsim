@@ -25,6 +25,7 @@ public class Splash extends JFrame implements Runnable{
         setUndecorated(true);
         setSize(icon.getIconWidth(),icon.getIconHeight());
         setLocationRelativeTo(null);
+        setAlwaysOnTop(true);
         pack();
     }
     

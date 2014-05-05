@@ -6,6 +6,11 @@
 
 package main;
 
+import controller.Controlador;
+import model.Modelo;
+import view.Menu;
+import view.Simulador;
+
 /**
  *
  * @author User
@@ -17,6 +22,12 @@ public class Main {
      */
     public static void main(String[] args) {
         new Thread(new Splash()).start();
+        Controlador c = new Controlador();
+        Menu menu = new Menu(c);
+        Modelo m = new Modelo(c);
+        Simulador s = new Simulador(c);
+        c.setComponents(menu,m,s);
+        menu.setVisible(true);
     }
     
 }
