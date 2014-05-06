@@ -15,7 +15,14 @@ public class GeneradorVariableTriangular {
     private int a, b, c;
     private double area1, area2;
     
+    public GeneradorVariableTriangular(){
+        
+    }
+    
     public GeneradorVariableTriangular(int a, int b, int c){
+        asignarValores(a,b,c);
+    }
+    public void asignarValores(int a, int b, int c){
         this.a = a;
         this.b = b;
         this.c = c;
